@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Markdown Plus</title>
+    <link href="configuracions_de_xarxa_files/icon.png" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" href="configuracions_de_xarxa_files/markdown-plus.css">
+    <script src="configuracions_de_xarxa_files/markdown-plus.js" charset="utf-8"></script><style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_editor.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style id="ace_searchbox">.ace_search {background-color: #ddd;border: 1px solid #cbcbcb;border-top: 0 none;max-width: 325px;overflow: hidden;margin: 0;padding: 4px;padding-right: 6px;padding-bottom: 0;position: absolute;top: 0px;z-index: 99;white-space: normal;}.ace_search.left {border-left: 0 none;border-radius: 0px 0px 5px 0px;left: 0;}.ace_search.right {border-radius: 0px 0px 0px 5px;border-right: 0 none;right: 0;}.ace_search_form, .ace_replace_form {border-radius: 3px;border: 1px solid #cbcbcb;float: left;margin-bottom: 4px;overflow: hidden;}.ace_search_form.ace_nomatch {outline: 1px solid red;}.ace_search_field {background-color: white;border-right: 1px solid #cbcbcb;border: 0 none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;float: left;height: 22px;outline: 0;padding: 0 7px;width: 214px;margin: 0;}.ace_searchbtn,.ace_replacebtn {background: #fff;border: 0 none;border-left: 1px solid #dcdcdc;cursor: pointer;float: left;height: 22px;margin: 0;position: relative;}.ace_searchbtn:last-child,.ace_replacebtn:last-child {border-top-right-radius: 3px;border-bottom-right-radius: 3px;}.ace_searchbtn:disabled {background: none;cursor: default;}.ace_searchbtn {background-position: 50% 50%;background-repeat: no-repeat;width: 27px;}.ace_searchbtn.prev {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADFJREFUeNpiSU1NZUAC/6E0I0yACYskCpsJiySKIiY0SUZk40FyTEgCjGgKwTRAgAEAQJUIPCE+qfkAAAAASUVORK5CYII=);    }.ace_searchbtn.next {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADRJREFUeNpiTE1NZQCC/0DMyIAKwGJMUAYDEo3M/s+EpvM/mkKwCQxYjIeLMaELoLMBAgwAU7UJObTKsvAAAAAASUVORK5CYII=);    }.ace_searchbtn_close {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAAAZ0lEQVR42u2SUQrAMAhDvazn8OjZBilCkYVVxiis8H4CT0VrAJb4WHT3C5xU2a2IQZXJjiQIRMdkEoJ5Q2yMqpfDIo+XY4k6h+YXOyKqTIj5REaxloNAd0xiKmAtsTHqW8sR2W5f7gCu5nWFUpVjZwAAAABJRU5ErkJggg==) no-repeat 50% 0;border-radius: 50%;border: 0 none;color: #656565;cursor: pointer;float: right;font: 16px/16px Arial;height: 14px;margin: 5px 1px 9px 5px;padding: 0;text-align: center;width: 14px;}.ace_searchbtn_close:hover {background-color: #656565;background-position: 50% 100%;color: white;}.ace_replacebtn.prev {width: 54px}.ace_replacebtn.next {width: 27px}.ace_button {margin-left: 2px;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-o-user-select: none;-ms-user-select: none;user-select: none;overflow: hidden;opacity: 0.7;border: 1px solid rgba(100,100,100,0.23);padding: 1px;-moz-box-sizing: border-box;box-sizing:    border-box;color: black;}.ace_button:hover {background-color: #eee;opacity:1;}.ace_button:active {background-color: #ddd;}.ace_button.checked {border-color: #3399ff;opacity:1;}.ace_search_options{margin-bottom: 3px;text-align: right;-webkit-user-select: none;-moz-user-select: none;-o-user-select: none;-ms-user-select: none;user-select: none;}
+/*# sourceURL=ace/css/ace_searchbox */</style><style id="vimMode">.normal-mode .ace_cursor{  border: 1px solid red;  background-color: red;  opacity: 0.5;}.normal-mode .ace_hidden-cursors .ace_cursor{  background-color: transparent;}.ace_dialog {  position: absolute;  left: 0; right: 0;  background: white;  z-index: 15;  padding: .1em .8em;  overflow: hidden;  color: #333;}.ace_dialog-top {  border-bottom: 1px solid #eee;  top: 0;}.ace_dialog-bottom {  border-top: 1px solid #eee;  bottom: 0;}.ace_dialog input {  border: none;  outline: none;  background: transparent;  width: 20em;  color: inherit;  font-family: monospace;}
+/*# sourceURL=ace/css/vimMode */</style>
+    <script src="configuracions_de_xarxa_files/index.js"></script>
+  <style id="ace-tomorrow-night-eighties">.ace-tomorrow-night-eighties .ace_gutter {background: #272727;color: #CCC}.ace-tomorrow-night-eighties .ace_print-margin {width: 1px;background: #272727}.ace-tomorrow-night-eighties {background-color: #2D2D2D;color: #CCCCCC}.ace-tomorrow-night-eighties .ace_constant.ace_other,.ace-tomorrow-night-eighties .ace_cursor {color: #CCCCCC}.ace-tomorrow-night-eighties .ace_marker-layer .ace_selection {background: #515151}.ace-tomorrow-night-eighties.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px #2D2D2D;}.ace-tomorrow-night-eighties .ace_marker-layer .ace_step {background: rgb(102, 82, 0)}.ace-tomorrow-night-eighties .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid #6A6A6A}.ace-tomorrow-night-bright .ace_stack {background: rgb(66, 90, 44)}.ace-tomorrow-night-eighties .ace_marker-layer .ace_active-line {background: #393939}.ace-tomorrow-night-eighties .ace_gutter-active-line {background-color: #393939}.ace-tomorrow-night-eighties .ace_marker-layer .ace_selected-word {border: 1px solid #515151}.ace-tomorrow-night-eighties .ace_invisible {color: #6A6A6A}.ace-tomorrow-night-eighties .ace_keyword,.ace-tomorrow-night-eighties .ace_meta,.ace-tomorrow-night-eighties .ace_storage,.ace-tomorrow-night-eighties .ace_storage.ace_type,.ace-tomorrow-night-eighties .ace_support.ace_type {color: #CC99CC}.ace-tomorrow-night-eighties .ace_keyword.ace_operator {color: #66CCCC}.ace-tomorrow-night-eighties .ace_constant.ace_character,.ace-tomorrow-night-eighties .ace_constant.ace_language,.ace-tomorrow-night-eighties .ace_constant.ace_numeric,.ace-tomorrow-night-eighties .ace_keyword.ace_other.ace_unit,.ace-tomorrow-night-eighties .ace_support.ace_constant,.ace-tomorrow-night-eighties .ace_variable.ace_parameter {color: #F99157}.ace-tomorrow-night-eighties .ace_invalid {color: #CDCDCD;background-color: #F2777A}.ace-tomorrow-night-eighties .ace_invalid.ace_deprecated {color: #CDCDCD;background-color: #CC99CC}.ace-tomorrow-night-eighties .ace_fold {background-color: #6699CC;border-color: #CCCCCC}.ace-tomorrow-night-eighties .ace_entity.ace_name.ace_function,.ace-tomorrow-night-eighties .ace_support.ace_function,.ace-tomorrow-night-eighties .ace_variable {color: #6699CC}.ace-tomorrow-night-eighties .ace_support.ace_class,.ace-tomorrow-night-eighties .ace_support.ace_type {color: #FFCC66}.ace-tomorrow-night-eighties .ace_heading,.ace-tomorrow-night-eighties .ace_markup.ace_heading,.ace-tomorrow-night-eighties .ace_string {color: #99CC99}.ace-tomorrow-night-eighties .ace_comment {color: #999999}.ace-tomorrow-night-eighties .ace_entity.ace_name.ace_tag,.ace-tomorrow-night-eighties .ace_entity.ace_other.ace_attribute-name,.ace-tomorrow-night-eighties .ace_meta.ace_tag,.ace-tomorrow-night-eighties .ace_variable {color: #F2777A}.ace-tomorrow-night-eighties .ace_indent-guide {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ09NrYAgMjP4PAAtGAwchHMyAAAAAAElFTkSuQmCC) right repeat-y}
+/*# sourceURL=ace/css/ace-tomorrow-night-eighties */</style></head>
+  <body style="cursor: auto;">
+    <div class="ui-layout-container" id="mdp-container" style="height: 99%; overflow: hidden; position: relative;">
+      <div style="position: absolute; margin: 0px; top: 0px; bottom: auto; left: 0px; right: 0px; width: auto; z-index: 0; height: 22px; display: block; visibility: visible;" class="ui-layout-north ui-layout-pane ui-layout-pane-north">
+        <div id="toolbar" class="noselect">
+          <i title="Bold" class="fa fa-bold styling-icon" data-modifier="**"></i>
+          <i title="Italic" class="fa fa-italic styling-icon" data-modifier="*"></i>
+          <i title="Strikethrough" class="fa fa-strikethrough styling-icon" data-modifier="~~"></i>
+          <i title="Underline" class="fa fa-underline styling-icon" data-modifier="++"></i>
+          <i title="Mark" class="fa fa-pencil styling-icon" data-modifier="=="></i>
+          <i class="dividor">|</i>
+          <i title="Heading 1" class="fa heading-icon" data-level="1">h1</i>
+          <i title="Heading 2" class="fa heading-icon" data-level="2">h2</i>
+          <i title="Heading 3" class="fa heading-icon" data-level="3">h3</i>
+          <i title="Heading 4" class="fa heading-icon" data-level="4">h4</i>
+          <i title="Heading 5" class="fa heading-icon" data-level="5">h5</i>
+          <i title="Heading 6" class="fa heading-icon" data-level="6">h6</i>
+          <i class="dividor">|</i>
+          <i title="Horizontal rule" id="horizontal-rule" class="fa fa-minus"></i>
+          <i title="Quote" class="fa fa-quote-left list-icon" data-prefix="&gt; "></i>
+          <i title="Unordered list" class="fa fa-list-ul list-icon" data-prefix="- "></i>
+          <i title="Ordered list" class="fa fa-list-ol list-icon" data-prefix="1. "></i>
+          <i title="Incomplete task list" class="fa fa-square-o list-icon" data-prefix="- [ ] "></i>
+          <i title="Complete task list" class="fa fa-check-square-o list-icon" data-prefix="- [x] "></i>
+          <i class="dividor">|</i>
+          <i title="Link" class="fa fa-link" id="link-icon" data-sample-text="link" data-sample-url="http://mdp.tylingsoft.com/"></i>
+          <i title="Image" class="fa fa-image" id="image-icon" data-sample-text="image" data-sample-url="http://mdp.tylingsoft.com/icon.png"></i>
+          <i title="Code" class="fa fa-code" id="code-icon"></i>
+          <i title="Table" class="fa fa-table" id="table-icon" data-sample="header 1 | header 2
+---|---
+row 1 col 1 | row 1 col 2
+row 2 col 1 | row 2 col 2"></i>
+          <i class="dividor">|</i>
+          <i title="Emoji" class="fa fa-smile-o" data-remodal-target="emoji-modal"></i>
+          <i title="Font awesome" class="fa fa-flag-o" data-remodal-target="fa-modal"></i>
+          <i title="Ionicons" class="icon ion-ionic" data-remodal-target="ion-modal"></i>
+          <i class="dividor">|</i>
+          <i title="Mathematical formula" class="fa fa-superscript" id="math-icon" data-sample="E = mc^2"></i>
+          <i title="Flowchart" class="fa fa-long-arrow-right mermaid-icon" data-sample="graph LR
+A--&gt;B"></i>
+          <i title="Sequence diagram" class="fa fa-exchange mermaid-icon" data-sample="sequenceDiagram
+A-&gt;&gt;B: How are you?
+B-&gt;&gt;A: Great!"></i>
+          <i title="Gantt diagram" class="fa fa-sliders mermaid-icon" data-sample="gantt
+dateFormat YYYY-MM-DD
+section S1
+T1: 2014-01-01, 9d
+section S2
+T2: 2014-01-11, 9d
+section S3
+T3: 2014-01-02, 9d"></i>
+          <i class="dividor">|</i>
+          <i title="Hide toolbar" class="fa fa-long-arrow-up" id="toggle-toolbar"></i>
+          <i title="Toggle editor" class="fa fa-long-arrow-left" id="toggle-editor"></i>
+          <i title="Toggle preview" class="fa fa-long-arrow-right" id="toggle-preview"></i>
+          <i class="dividor">|</i>
+          <i title="Preferences" class="fa fa-cog" data-remodal-target="preferences-modal"></i>
+          <i title="Help" class="fa fa-question-circle" data-remodal-target="help-modal"></i>
+          <i title="About" class="fa fa-info-circle" data-remodal-target="about-modal"></i>
+        </div>
+      </div>
+      <div style="position: absolute; margin: 0px; left: 0px; right: 1365px; top: 28px; bottom: 0px; height: 599px; width: 1px; z-index: 0; display: block; visibility: visible;" class="ui-layout-center ui-layout-pane ui-layout-pane-center">
+        <div draggable="false" style="font-size: 14px;" class=" ace_editor ace-tomorrow-night-eighties ace_dark ace_focus" id="editor"><textarea style="opacity: 0; height: 17px; width: 8px; left: 0px; top: 0px;" spellcheck="false" autocapitalize="off" autocorrect="off" class="ace_text-input" wrap="off"></textarea><div class="ace_gutter"><div style="margin-top: 0px; height: 651px; width: 57px;" class="ace_layer ace_gutter-layer ace_folding-enabled"><div style="height: 51px;" class="ace_gutter-cell ">1</div><div style="height: 17px;" class="ace_gutter-cell ">2</div><div style="height: 17px;" class="ace_gutter-cell ">3</div><div style="height: 17px;" class="ace_gutter-cell ">4</div><div style="height: 17px;" class="ace_gutter-cell ">5</div><div style="height: 17px;" class="ace_gutter-cell ">6</div><div style="height: 17px;" class="ace_gutter-cell ">7</div><div style="height: 17px;" class="ace_gutter-cell ">8</div><div style="height: 17px;" class="ace_gutter-cell ">9</div><div style="height: 17px;" class="ace_gutter-cell ">10</div><div style="height: 17px;" class="ace_gutter-cell ">11</div><div style="height: 17px;" class="ace_gutter-cell ">12</div><div style="height: 17px;" class="ace_gutter-cell ">13</div><div style="height: 17px;" class="ace_gutter-cell ">14</div><div style="height: 17px;" class="ace_gutter-cell ">15</div><div style="height: 17px;" class="ace_gutter-cell ">16</div><div style="height: 17px;" class="ace_gutter-cell ">17</div><div style="height: 17px;" class="ace_gutter-cell ">18</div><div style="height: 17px;" class="ace_gutter-cell ">19</div><div style="height: 17px;" class="ace_gutter-cell ">20</div><div style="height: 17px;" class="ace_gutter-cell ">21</div><div style="height: 17px;" class="ace_gutter-cell ">22</div><div style="height: 17px;" class="ace_gutter-cell ">23</div><div style="height: 17px;" class="ace_gutter-cell ">24</div><div style="height: 34px;" class="ace_gutter-cell ">25</div><div style="height: 17px;" class="ace_gutter-cell ">26</div><div style="height: 17px;" class="ace_gutter-cell ">27</div><div style="height: 17px;" class="ace_gutter-cell ">28</div><div style="height: 17px;" class="ace_gutter-cell ">29</div><div style="height: 17px;" class="ace_gutter-cell ">30</div><div style="height: 17px;" class="ace_gutter-cell ">31</div><div style="height: 17px;" class="ace_gutter-cell ">32</div><div style="height: 17px;" class="ace_gutter-cell ">33</div><div style="height: 34px;" class="ace_gutter-cell ">34</div></div><div style="top: 612px; height: 34px;" class="ace_gutter-active-line"></div></div><div style="left: 57px; right: 16px; bottom: 16px;" class="ace_scroller"><div style="margin-top: 0px; width: 688px; height: 651px; margin-left: 0px;" class="ace_content"><div class="ace_layer ace_print-margin-layer"><div style="left: 644px; visibility: hidden;" class="ace_print-margin"></div></div><div class="ace_layer ace_marker-layer"></div><div style="padding: 0px 4px;" class="ace_layer ace_text-layer"><div style="height: 51px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_string ace_strong">___1. Configureu dos ordinadors fent servir la comanda ip amb dues adreces del rang </span></div><div class="ace_line" style="height:17px"><span class="ace_string ace_strong">172.16.0.0 i comproveu que es veuen entre si. Indiqueu les comandes que heu utilitzat </span></div><div class="ace_line" style="height:17px"><span class="ace_string ace_strong">a)per configurar-les b) per comprovar que es veuen.___</span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">Per configurar les adreces:</span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_support ace_function">    # ip addr add 172.16.0.13/16 dev enp5s0</span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_support ace_function">    # ip addr add 172.16.0.15/16 dev enp5s0</span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">    </span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">Per comprovar que s’han configurat les Ips correctament:</span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_support ace_function">    # ip addr show enp5s0 </span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">Per comprovar que es veuen:</span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_support ace_function">    # ping 172.16.0.15</span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">    </span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">PING 172.16.0.15 (172.16.0.15) 56(84) bytes of data.  </span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">64 bytes from 172.16.0.15: icmp_seq=1 ttl=64 time=0.658 ms  </span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">64 bytes from 172.16.0.15: icmp_seq=2 ttl=64 time=0.477 ms  </span></div></div><div style="height: 17px;" class="ace_line_group"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">64 bytes from 172.16.0.15: icmp_seq=3 ttl=64 time=0.471 ms  </span></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">--- 172.16.0.15 ping statistics ---  </span></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">3 packets transmitted, 3 received, 0% packet loss, time 2000ms  </span></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">rtt min/avg/max/mdev = 0.471/0.535/0.658/0.088 ms  </span></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"></div></div><div class="ace_line_group" style="height:34px"><div class="ace_line" style="height:17px"><span class="ace_string ace_strong">___2. Com podem descobrir l'adreça mac d'un altre dispositiu de la nostra xarxa (que </span></div><div class="ace_line" style="height:17px"><span class="ace_string ace_strong">no sigui el nostre)? Indiqueu-ne les comandes i la sortida.___</span><span class="ace_text ace_xml">  </span></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"><span class="ace_support ace_function">    # arp -a</span></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"><span class="ace_support ace_function">    # arp 172.16.0.15</span></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">    </span></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">Address                  HWtype  HWaddress           Flags Mask            Iface  </span></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"><span class="ace_text ace_xml">172.16.0.15              ether   40:8d:5c:e4:37:c7   C                     enp5s0</span></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"></div></div><div class="ace_line_group" style="height:17px"><div class="ace_line" style="height:17px"></div></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer"><div style="left: 68px; top: 629px; width: 8px; height: 17px;" class="ace_cursor"></div></div></div></div><div style="width: 21px; bottom: 16px;" class="ace_scrollbar ace_scrollbar-v"><div style="width: 21px; height: 3179px;" class="ace_scrollbar-inner"></div></div><div style="height: 21px; left: 57px; right: 16px;" class="ace_scrollbar ace_scrollbar-h"><div style="height: 21px; width: 688px;" class="ace_scrollbar-inner"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-family: inherit; font-style: inherit; font-size: inherit; line-height: inherit; font-size-adjust: inherit; font-stretch: inherit; font-feature-settings: inherit; font-language-override: inherit; font-kerning: inherit; font-synthesis: inherit; font-variant: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div> <!-- editor -->
+        
+        
+        
+        
+        
+        
+      </div>
+      <div style="position: absolute; margin: 0px; left: auto; right: 0px; top: 28px; bottom: 0px; height: 599px; z-index: 0; width: 1359px; display: block; visibility: visible;" class="ui-layout-east ui-layout-pane ui-layout-pane-east ui-layout-pane-hover ui-layout-pane-east-hover ui-layout-pane-open-hover ui-layout-pane-east-open-hover">
+        <article style="padding-bottom: 575px;" class="markdown-body" id="preview"><p data-source-line="1"><strong><em>1.
+ Configureu dos ordinadors fent servir la comanda ip amb dues adreces 
+del rang 172.16.0.0 i comproveu que es veuen entre si. Indiqueu les 
+comandes que heu utilitzat a)per configurar-les b) per comprovar que es 
+veuen.</em></strong></p>
+<p data-source-line="3">Per configurar les adreces:</p>
+<pre data-source-line="5"><code class="hljs"># ip addr add 172.16.0.13/16 dev enp5s0
+# ip addr add 172.16.0.15/16 dev enp5s0</code></pre><p data-source-line="8">Per comprovar que s’han configurat les Ips correctament:</p>
+<pre data-source-line="10"><code class="hljs"># ip addr show enp5s0</code></pre><p data-source-line="12">Per comprovar que es veuen:</p>
+<pre data-source-line="14"><code class="hljs"># ping 172.16.0.15</code></pre><p data-source-line="16">PING 172.16.0.15 (172.16.0.15) 56(84) bytes of data.<br>
+64 bytes from 172.16.0.15: icmp_seq=1 ttl=64 time=0.658 ms<br>
+64 bytes from 172.16.0.15: icmp_seq=2 ttl=64 time=0.477 ms<br>
+64 bytes from 172.16.0.15: icmp_seq=3 ttl=64 time=0.471 ms<br>
+--- 172.16.0.15 ping statistics ---<br>
+3 packets transmitted, 3 received, 0% packet loss, time 2000ms<br>
+rtt min/avg/max/mdev = 0.471/0.535/0.658/0.088 ms</p>
+<p data-source-line="25"><strong><em>2. Com podem descobrir l'adreça mac
+ d'un altre dispositiu de la nostra xarxa (que no sigui el nostre)? 
+Indiqueu-ne les comandes i la sortida.</em></strong></p>
+<pre data-source-line="27"><code class="hljs"># arp -a
+# arp 172.16.0.15</code></pre><p data-source-line="30">Address                  HWtype  HWaddress           Flags Mask            Iface<br>
+172.16.0.15              ether   40:8d:5c:e4:37:c7   C                     enp5s0</p>
+<p data-source-line="34"><strong><em>3. Com podem canviar el nom d'una interfície de xarxa amb la comanda ip? Poseu exemple.</em></strong></p>
+<pre data-source-line="36"><code class="hljs"># ip link set enp5s0 down
+# ip link set enp5s0 name practica_1
+# ip link set practica_1 up
+# ip a s practica_1</code></pre><p data-source-line="41">2: practica_1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UP group default qlen 1000<br>
+link/ether 40:8d:5c:e4:1d:e4 brd ff:ff:ff:ff:ff:ff<br>
+inet 192.168.2.43/16 brd 192.168.255.255 scope global dynamic practica_1<br>
+valid_lft 21563sec preferred_lft 21563sec<br>
+inet 172.16.0.13/16 scope global practica_1<br>
+valid_lft forever preferred_lft forever<br>
+inet6 fe80::f89e:3f01:145c:9844/64 scope link<br>
+valid_lft forever preferred_lft forever</p>
+<p data-source-line="51"><strong><em>4. Busqueu el paquet RPM per a la 
+utilitat netperf i instal.leu-lo (copieu netperf al directori cp netperf
+ /usr/local/bin per tal que sigui accessible desde qualsevol lloc). 
+Arrenqueu el servidor en una de les màquines i el client en l'altra tot 
+comprovant la velocitat que obtenim entre els dos. Indiqueu quina es la 
+velocitat obtinguda. Feu servir aquest script en el client per tal de 
+comprovar TCP full-duplex:</em></strong></p>
+<p data-source-line="53">91.39 inbound<br>
+91.44 outbound</p>
+<p data-source-line="57"><strong><em>5. Canvieu ara la MTU de les 
+interfícies de xarxa dels dos ordinadors a un valor de 9000 bytes. 
+comproveu de nou quina és la velocitat obtinguda. Expliqueu els 
+resultats tot comparant-los.</em></strong></p>
+<pre data-source-line="59"><code class="hljs"># ifconfig enp5s0 mtu 9000
+# ip link set enp5s0 mtu 9000
+# ip a s enp5s0</code></pre><p data-source-line="63">2: enp5s0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 9000 qdisc fq_codel state UP group default qlen 1000</p>
+<p data-source-line="65">483.20 inbound<br>
+483.07 outbound</p>
+<p data-source-line="68">Es pot veure clarament com la velocitat ha augmentat considerablement.</p>
+<p data-source-line="71"><strong><em>6. Realitzeu ara la mateixa configuració estàtica d'adreces IP amb la comanda nmcli. Indiqueu-ne els passos.</em></strong></p>
+<p data-source-line="73">D'aquesta manera afegim una altra IP a la connexió existent:</p>
+<pre data-source-line="75"><code class="hljs"># nmcli connection modify enp5s0 +ipv4.addresses 172.16.0.13/16
+# nmcli connection up enp5s0 
+# nmcli device show enp5s0</code></pre><p data-source-line="79">D'aquesta altra creem una nova connexió per a la interfície enp5s0 amb una IP:</p>
+<pre data-source-line="81"><code class="hljs"># nmcli con add con-name net-eth0 ifname enp5s0 type ethernet ip4 172.16.0.13/16 gw4 	192.168.0.1
+
+Connection 'net-eth0' (57d106a7-afb9-4381-acb1-d889c9a2591a) successfully added.</code></pre><p data-source-line="85">Activem la nova connexió:</p>
+<pre data-source-line="87"><code class="hljs"># nmcli connection up net-eth0</code></pre><p data-source-line="89">Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/2)</p>
+<pre data-source-line="91"><code class="hljs"># nmcli connection show</code></pre><p data-source-line="93">NAME    UUID                                  TYPE            DEVICE<br>
+enp5s0  5befe0cc-c7fb-4eff-87d2-faf54eb97cef  802-3-ethernet  enp5s0</p>
+<p data-source-line="97"><strong><em>7. On es troba la configuració de servidors de noms de domini?</em></strong></p>
+<pre data-source-line="99"><code class="hljs"># cat /etc/resolv.conf</code></pre><p data-source-line="101">#Generated by NetworkManager<br>
+search informatica.escoladeltreball.org<br>
+nameserver 192.168.0.10<br>
+nameserver 10.1.1.200<br>
+nameserver 193.152.63.197</p>
+<p data-source-line="108"><strong><em>8. Realitzeu la mateixa 
+configuració anterior de manera permanent (ifcfg-...). Quins són els 
+paràmetres de la comanda nmcli per tal de forçar que s'apliquin els 
+canvis de xarxa que hem fet als fitxers?</em></strong></p>
+<p data-source-line="110">Modifiquem el fitxer /etc/sysconfig/network-scripts/ifcfg-enp5s0</p>
+<p data-source-line="112">NAME="enp5s0"<br>
+DEVICE="enp5s0"<br>
+ONBOOT=yes<br>
+NETBOOT=yes<br>
+UUID="5befe0cc-c7fb-4eff-87d2-faf54eb97cef"<br>
+IPV6INIT=yes<br>
+BOOTPROTO=none<br>
+TYPE=Ethernet<br>
+IPADDR=172.16.0.13<br>
+PREFIX=16<br>
+GATEWAY=192.168.1.10<br>
+DEFROUTE=yes<br>
+PEERDNS=yes<br>
+PEERROUTES=yes<br>
+IPV4_FAILURE_FATAL=no<br>
+IPV6_AUTOCONF=yes<br>
+IPV6_DEFROUTE=yes<br>
+IPV6_PEERDNS=yes<br>
+IPV6_PEERROUTES=yes<br>
+IPV6_FAILURE_FATAL=no</p>
+<p data-source-line="133">Per aplicar els canvis de xarxa que hem fet als fitxers:</p>
+<pre data-source-line="135"><code class="hljs"># nmcli connection up enp5s0</code></pre><p data-source-line="138"><strong><em>9.
+ Com podem canviar de manera permanent el nom de les interfícies de 
+xarxa (que sobrevisquin a un reinici?) 
+/etc/udev/rules.d/70-persistent-net.rules</em></strong></p>
+<p data-source-line="140">Creem i afegim la següent línia al nou fitxer:</p>
+<p data-source-line="142">SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?<em>", ATTR{address}== "40:8d:5c:e4:37:c7", ATTR{type}== "1", KERNEL=="e</em>", NAME="nova_interficie"</p>
+<p data-source-line="145"><strong><em>10. Com podem traduïr un nom de 
+domini per la seva/seves adreces IP? I com podem trobar el nom de domini
+ a partir d'una adreça IP?</em></strong></p>
+<p data-source-line="147">Per traduïr un nom de domini:</p>
+<pre data-source-line="149"><code class="hljs"># nslookup i15.informatica.escoladeltreball.org.</code></pre><p data-source-line="151">Server:		192.168.0.10<br>
+Address:	192.168.0.10#53</p>
+<p data-source-line="154">Name:	i15.informatica.escoladeltreball.org<br>
+Address: 192.168.2.45</p>
+<p data-source-line="157">Per trobar el nom de domini a partir d'una IP:</p>
+<pre data-source-line="159"><code class="hljs"># nslookup 192.168.2.45</code></pre><p data-source-line="161">Server:		192.168.0.10<br>
+Address:	192.168.0.10#53</p>
+<p data-source-line="164">45.2.168.192.in-addr.arpa	name = i15.informatica.escoladeltreball.org.</p>
+</article>
+        <article class="markdown-body" id="cache" style="display: none;"></article>
+      </div>
+    <div class="ui-layout-resizer ui-layout-resizer-north ui-layout-resizer-open ui-layout-resizer-north-open" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; top: 22px; cursor: default; width: 1366px; height: 6px; left: 0px;" id=""><div title="Hide toolbar" class="ui-layout-toggler ui-layout-toggler-north ui-layout-toggler-open ui-layout-toggler-north-open" style="position: absolute; display: block; padding: 0px; margin: 0px; overflow: hidden; text-align: center; font-size: 1px; cursor: pointer; z-index: 1; visibility: visible; width: 126px; height: 6px; left: 619px; top: 0px;" id=""></div></div><div title="Resize" class="ui-layout-resizer ui-layout-resizer-east ui-draggable-handle ui-layout-resizer-open ui-layout-resizer-east-open" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; cursor: e-resize; right: 1359px; height: 599px; width: 6px; top: 28px;"><div title="Close" class="ui-layout-toggler ui-layout-toggler-east ui-layout-toggler-open ui-layout-toggler-east-open" style="position: absolute; display: none; padding: 0px; margin: 0px; overflow: hidden; text-align: center; font-size: 1px; cursor: pointer; z-index: 1; visibility: visible;" id=""></div></div></div>
+  
+
+<div style="display: none;" class="remodal-overlay remodal-is-closed"></div><div style="display: none;" class="remodal-wrapper remodal-is-closed"><div tabindex="-1" class="remodal remodal-is-initialized remodal-is-closed" id="emoji-modal" data-remodal-id="emoji-modal"> <!-- emoji modal -->
+          <h2>Please enter an emoji code:</h2>
+          <p>Examples: "smile", "whale", "santa", "panda_face", "dog", "truck" ...</p>
+          <p>For a complete list, please check <a href="http://www.emoji-cheat-sheet.com/" target="_blank">Emoji Cheat Sheet</a>.</p>
+          <p><input class="form-control" id="emoji-code" placeholder="smile"></p>
+          <br><a data-remodal-action="cancel" class="remodal-cancel">Cancel</a>
+          <a data-remodal-action="confirm" class="remodal-confirm" id="emoji-confirm">OK</a>
+        </div></div><div style="display: none;" class="remodal-wrapper remodal-is-closed"><div tabindex="-1" class="remodal remodal-is-initialized remodal-is-closed" id="fa-modal" data-remodal-id="fa-modal"> <!-- Font Awesome modal -->
+          <h2>Please enter a Font Awesome code:</h2>
+          <p>Examples: "cloud", "flag", "car", "truck", "heart", "dollar" ...</p>
+          <p>For a complete list, please check <a href="http://fontawesome.io/icons/" target="_blank">Font Awesome Icons</a>.</p>
+          <p><input class="form-control" id="fa-code" placeholder="heart"></p>
+          <br><a data-remodal-action="cancel" class="remodal-cancel">Cancel</a>
+          <a data-remodal-action="confirm" class="remodal-confirm" id="fa-confirm">OK</a>
+        </div></div><div style="display: none;" class="remodal-wrapper remodal-is-closed"><div tabindex="-1" class="remodal remodal-is-initialized remodal-is-closed" id="ion-modal" data-remodal-id="ion-modal"> <!-- Ionicons modal -->
+          <h2>Please enter an Ionicons code:</h2>
+          <p>Examples: "beer", "key", "locked", "location", "plane", "ios-eye" ...</p>
+          <p>For a complete list, please check <a href="http://ionicons.com/" target="_blank">Ionicons Website</a>.</p>
+          <p><input class="form-control" id="ion-code" placeholder="beer"></p>
+          <br><a data-remodal-action="cancel" class="remodal-cancel">Cancel</a>
+          <a data-remodal-action="confirm" class="remodal-confirm" id="ion-confirm">OK</a>
+        </div></div><div style="display: none;" class="remodal-wrapper remodal-is-closed"><div tabindex="-1" class="remodal remodal-is-initialized remodal-is-closed" id="preferences-modal" data-remodal-id="preferences-modal" data-remodal-options="closeOnEscape: false, closeOnCancel: false, closeOnOutsideClick: false"> <!-- Preferences modal -->
+          <img src="configuracions_de_xarxa_files/icon.png" width="64">
+          <h2>Markdown Plus Preferences</h2>
+          <p>Show toolbar: <select id="show-toolbar">
+            <option selected="selected" value="yes">Yes</option>
+            <option value="no">No</option>
+          </select></p>
+          <p>Editor : Preview <select id="editor-versus-preview">
+            <option value="100%">0 : 1</option>
+            <option value="66.6%">1 : 2</option>
+            <option selected="selected" value="50%">1 : 1</option>
+            <option value="33.3%">2 : 1</option>
+            <option value="1">1 : 0</option>
+          </select></p>
+          <p>Editor theme: <select id="editor-theme">
+            <option value="tomorrow_night_blue">Blue</option>
+            <option value="tomorrow">Bright</option>
+            <option selected="selected" value="tomorrow_night_eighties">Dark</option>
+            <option value="kuroir">Gray</option>
+          </select></p>
+          <p>Editor font size: <select id="editor-font-size">
+            <option value="8">8px</option><option value="9">9px</option><option value="10">10px</option><option value="11">11px</option>
+            <option value="12">12px</option><option value="13">13px</option><option selected="selected" value="14">14px</option><option value="15">15px</option>
+            <option value="16">16px</option><option value="17">17px</option><option value="18">18px</option><option value="20">20px</option>
+            <option value="24">24px</option><option value="32">32px</option><option value="48">48px</option><option value="64">64px</option>
+          </select></p>
+          <p>Key binding: <select id="key-binding">
+            <option selected="selected" value="default">Default</option>
+            <option value="emacs">Emacs</option>
+            <option value="vim">Vim</option>
+          </select></p>
+          <p>Gantt diagram axis format: <input value="%Y-%m-%d" id="gantt-axis-format" placeholder="%Y-%m-%d">
+            <br><a href="https://github.com/mbostock/d3/wiki/Time-Formatting" target="_blank">Time formatting reference</a></p>
+          <p>Custom CSS files: <textarea id="custom-css-files" placeholder="https://cdn.example.com/file.css" title="Multiple files should be separated by line breaks" wrap="off"></textarea>
+            <br><span class="hint">(You need to restart the editor to apply the CSS files)</span>
+            <br><a href="https://github.com/tylingsoft/markdown-plus-themes" target="_blank">Markdown Plus themes</a></p>
+          <p>Custom JS files: <textarea id="custom-js-files" placeholder="https://cdn.example.com/file.js" title="Multiple files should be separated by line breaks" wrap="off"></textarea>
+            <br><span class="hint">(You need to restart the editor to apply the JS files)</span>
+            <br><a href="https://github.com/tylingsoft/markdown-plus-plugins" target="_blank">Markdown Plus plugins</a></p>
+          <br><a data-remodal-action="confirm" class="remodal-confirm">OK</a>
+        </div></div><div style="display: none;" class="remodal-wrapper remodal-is-closed"><div tabindex="-1" class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="help-modal"> <!-- help modal -->
+          <img src="configuracions_de_xarxa_files/icon.png" width="64">
+          <h2>Markdown Plus help</h2>
+          <p><a href="http://mdp.tylingsoft.com/" target="_blank">Online Sample</a></p>
+          <p><a href="https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts" target="_blank">Keyboard Shortcuts</a></p>
+          <p><a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Markdown Basics</a></p>
+          <p><a href="https://help.github.com/articles/github-flavored-markdown/" target="_blank">GitHub Flavored Markdown</a></p>
+          <p>If none of the above solves your problem, please <a target="_blank" href="http://tylingsoft.com/contact/">contact us</a>.</p>
+          <br><a data-remodal-action="confirm" class="remodal-confirm">OK</a>
+        </div></div><div style="display: none;" class="remodal-wrapper remodal-is-closed"><div tabindex="-1" class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="about-modal"> <!-- about modal -->
+          <img src="configuracions_de_xarxa_files/icon.png" width="64">
+          <h2>Markdown Plus</h2> Version 2.x
+          <p>Markdown editor with extra features.</p>
+          <p>Copyright © 2016 <a href="http://tylingsoft.com/" target="_blank">Tylingsoft</a>.</p>
+          <p>Home page: <a href="http://tylingsoft.com/markdown-plus/" target="_blank">http://tylingsoft.com/markdown-plus/</a>.</p>
+          <br><a data-remodal-action="confirm" class="remodal-confirm">OK</a>
+        </div></div></body></html>
